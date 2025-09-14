@@ -1,0 +1,218 @@
+.player {
+  display: flex;
+  gap: 10px;
+  height: calc(100vh - 120px); /* adjust for navbar */
+  width: 100;
+  /* background: #f9fafb; */
+  padding: 10px 10px;
+}
+
+/* Left Section */
+.left {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid #ddd;
+  /* padding: 0px 10px; */
+}
+
+/* Video */
+.left .top {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+
+.left .top iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  padding-right:20px ;
+  /* padding: 10px 15px; */
+  /* background: #f9f9f9; */
+  
+ 
+}
+.bottom .title {
+  font-size: 1.2rem;
+  font-weight: 600;
+   /* take remaining space */
+  margin-right: 10px;
+}
+.bottom .tright {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: left;
+  padding: 0 6px;
+}
+.channel-logo {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+
+/* .join-btn:hover {
+  background: #cc0000;
+} */
+/* Right Section */
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* background: #fff; */
+  border-left: 2px solid #ddd;
+  position: relative;
+}
+
+/* Toggle Buttons */
+.toggle-buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  background: #f9fafb;
+}
+
+.toggle-buttons button {
+  flex: 1;
+  padding: 8px 12px;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+  margin: 0 5px;
+  border-radius: 6px;
+}
+
+.toggle-buttons button.active {
+  background: #4f46e5;
+  color: white;
+}
+
+/* Messages Area */
+.right .messages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.right .messages::-webkit-scrollbar {
+  display: none;
+}
+
+/* Chat message bubbles */
+.mole {
+  margin: 6px 0;
+  padding: 8px 12px;
+  max-width: 80%;
+  border-radius: 8px;
+}
+
+.mole.bot {
+  background: #e6f0fa;
+  align-self: flex-start;
+}
+
+.mole.user {
+  align-self: flex-end;
+  background: #d1ffd6;
+}
+.mole.user p{
+  background: #d1ffd6;
+}
+
+/* Input Area */
+.right .bottom {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  position: sticky;
+  bottom: 0;
+  background: #fff;
+}
+
+.right .bottom input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.right .bottom button {
+  margin-left: 10px;
+  padding: 10px 16px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.right .bottom button:hover {
+  background: #4338ca;
+}
+
+/* Recommended (inside right panel) */
+.recommend {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.recommend h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.recommend ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recommend ul li {
+  background: #f4f4f4;
+  margin: 6px 0;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.recommend ul li:hover {
+  background: #e4e4e4;
+}
+.attempt-btn{
+   background: #ff0000;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.attempt-btn:hover {
+  background-color: #2980b9; /* darker blue on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}

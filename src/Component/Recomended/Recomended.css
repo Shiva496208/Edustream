@@ -1,0 +1,91 @@
+.recommend-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 10px;
+  overflow-y: auto;
+  height: 100%;
+}
+.recommend-container::-webkit-scrollbar{
+    display: none;
+}
+.rcard {
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 6px;
+}
+
+.rcard:hover {
+  background: #f3f4f6;
+  transform: translateY(-10px) scale(1.02); /* light hover effect */
+}
+.rcard:hover .rcard-footerr,
+.rcard:hover .rvideo-title,
+.rcard:hover .rchanneltiitle{
+  background-color: #f3f4f6;
+}
+/* Thumbnail */
+.rthumbnail img {
+  width: 160px;
+  height: 90px;
+ 
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+/* Footer (channel + title) */
+.rcard-footerr {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  gap: 8px;
+  flex: 1;
+  
+}
+
+.rchannel-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.rvideo-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #111827;
+  line-height: 1.4;
+  /* display: -webkit-box;
+  -webkit-line-clamp: 2; /* show only 2 lines */
+  /* -webkit-box-orient: vertical; */ 
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+}
+.rchanneltiitle{
+    font-size: 12px;
+  font-weight: 500;
+  color: #111827be;
+}
+.rfooter-btn {
+  background-color: #3498db; /* same blue tone */
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  /* pushes button to right side */
+  margin-right: auto;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.rfooter-btn:hover {
+  background-color: #2980b9; /* darker blue on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
