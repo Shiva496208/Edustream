@@ -96,7 +96,7 @@ Rules:
       },
       {
         headers: {
-          Authorization: `Bearer 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`,
+          Authorization: `Bearer Your api key`,
           "Content-Type": "application/json",
         },
       }

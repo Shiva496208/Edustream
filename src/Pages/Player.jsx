@@ -9,8 +9,8 @@ const Player = () => {
   const [input, setinput] = useState("");
   const [activeTab, setActiveTab] = useState("chat"); // 🔹 toggle state
   const [responding,setresponding]=useState(false);
-  const api = "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"
-  // const api = "ssk-or-v1-208e324c537226be79a4226c3db8b1ea8f00f5cf702443afc0d61728874cf8fb"
+  const api = "Your Api key"
+  
   
   const {id} = useParams();
   const location=useLocation();
