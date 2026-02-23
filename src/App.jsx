@@ -17,6 +17,7 @@ import Player from './Pages/Player';
 import Searchpage from './Pages/Searchpage.jsx';
 import Quizpage from './Pages/Quizpage.jsx';
 import t from './Pages/t.jsx'
+import Login from './Pages/Login/Login.jsx';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
         <Route path="/searchpage" element={<Searchpage/>} />
         <Route path="/quiz/:videoId" element={<Quizpage />} />
         <Route path="/player/:id" element={<Player/>} />
+        <Route path="/signup" element={<Login/>} />
         
       </Routes>
     </BrowserRouter>

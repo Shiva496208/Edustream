@@ -88,7 +88,7 @@ Rules:
     const response = await axios.post(
       "https://openrouter.ai/api/v1/chat/completions",
       {
-        model: "deepseek/deepseek-chat-v3-0324",
+        model: "deepseek/deepseek-r1-0528:free",
         messages: [
           { role: "system", content: "You are a helpful quiz generator." },
           { role: "user", content: prompt },
@@ -96,7 +96,7 @@ Rules:
       },
       {
         headers: {
-          Authorization: `Bearer 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`, // <-- set your key
+          Authorization: `Bearer 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`,
           "Content-Type": "application/json",
         },
       }

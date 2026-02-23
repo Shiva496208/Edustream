@@ -4,7 +4,7 @@ import he from "he";
 // import Player from '../../Pages/Player';
 import './Detailcard.css'
 const Detailcard = ({category}) => {
-    const api_key="AIzaSyCzcihCzsAspAH9k9UbihvYcsAgdmVFWzI";
+    const api_key="AIzaSyBgsXoZaesBUjQrwzAa3xLy2mEZmeMjpls";
 
     const[videos,setvideos]=useState([]);
     useEffect(()=>{

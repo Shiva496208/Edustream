@@ -9,7 +9,9 @@ const Player = () => {
   const [input, setinput] = useState("");
   const [activeTab, setActiveTab] = useState("chat"); // 🔹 toggle state
   const [responding,setresponding]=useState(false);
-  const api = "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"
+  const api = "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"
+  // const api = "ssk-or-v1-208e324c537226be79a4226c3db8b1ea8f00f5cf702443afc0d61728874cf8fb"
+  
   const {id} = useParams();
   const location=useLocation();
     const{video}=location.state;
@@ -50,7 +52,7 @@ Student query: ${input}
           "Authorization": `Bearer ${api}`
         },
         body: JSON.stringify({
-          model: "deepseek/deepseek-chat-v3-0324",
+          model: "deepseek/deepseek-r1-0528:free",
           messages: [{ role: "user", content: modified }],
         }),
       });
@@ -71,18 +73,18 @@ Student query: ${input}
     <>
       <Navbar />
       <div className='player'>
-        {/* Left: Video */}
+        
          <div className="left">
     <div className="top">
       <iframe
         src={`https://www.youtube.com/embed/${id}?rel=0&modestbranding=1&showinfo=1&controls=1&disablekb=0`}
         allowFullScreen
-        //  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        
         title="YouTube player"
       ></iframe>
     </div>
 
-    {/* Bottom details */}
+    
     <div className="bottom">
       <h1 className="title">{video.snippet.title}</h1>
       <div className="tright">
@@ -96,9 +98,9 @@ Student query: ${input}
       </div>
     </div>
   </div>
-        {/* Right: Toggleable section */}
+       
         <div className="right">
-          {/* 🔹 Toggle Buttons */}
+          
           <div className="toggle-buttons">
             <button 
               className={activeTab === "chat" ? "active" : ""} 
@@ -114,7 +116,7 @@ Student query: ${input}
             </button>
           </div>
 
-          {/* 🔹 Conditional Rendering */}
+          
           {activeTab === "chat" ?
             <>
               <div className="messages">

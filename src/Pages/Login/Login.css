@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #e6f0fa;
+}
+
+/* PAGE */
+.auth {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* CARD */
+.auth-card {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* TITLE */
+.auth-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1b2b41;
+}
+
+/* FORM */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* INPUT */
+.auth-input {
+  padding: 12px;
+  border: 1px solid #c9d7e6;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  background: white;
+}
+
+.auth-input:focus {
+  border-color: #2d7ff9;
+  box-shadow: 0 0 0 3px rgba(45, 127, 249, 0.18);
+}
+
+/* BUTTON */
+.auth-btn {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #2d7ff9;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.auth-btn:hover {
+  background: #1f66d0;
+}
+
+/* SWITCH */
+.auth-switch {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #1b2b41;
+}
+
+.auth-switch span {
+  color: #2d7ff9;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 6px;
+}
+
+.auth-switch span:hover {
+  text-decoration: underline;
+}
